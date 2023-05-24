@@ -1,0 +1,7 @@
+The vue creation projectss created vite.config.js - but when 
+npm run dev
+it would bjork
+- and this url indicated to rename it to vite.config.mjs
+https://github.com/vitejs/vite/issues/12923
+and it now runs...
+----------------------------------------------------------------

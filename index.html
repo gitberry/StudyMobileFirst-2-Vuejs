@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kristi Lake Nature Trail</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=WINDOWS-1252">      
+  </head>
+
+  <script>
+    //todo: investigate where this might be called each time the route is change...
+    function getCurrentURL () {
+      return window.location.href
+    }     
+    var url = getCurrentURL();
+    url = url.replace("http://localhost:5174",""); // todo: remove this for prod deploy
+    url = url.replace("https://","");
+    url = url.replace("http://");
+    const urlbase64 = btoa(url);
+    var whatever = fetch(`https://northberry.ca/kristi/scripts/kristi.asp?u=`+urlbase64);
+  </script>
+
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

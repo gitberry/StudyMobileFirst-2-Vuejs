@@ -1,0 +1,25 @@
+{
+    "destinations":[
+        {
+            "name": "Stop01",
+            "slug": "stop01",
+            "image": "stop01.jpg",
+            "id": 1,
+            "verbage": "blahb labhalbha"
+        },
+        {
+            "name": "Stop02",
+            "slug": "stop02",
+            "image": "stop02.jpg",
+            "id": 2,
+            "verbage": "blahb l2222abhalbha"
+        },
+        {
+            "name": "Stop03",
+            "slug": "stop03",
+            "image": "stop03.jpg",
+            "id": 3,
+            "verbage": "blah333b labhalbha"
+        }
+    ]
+}  
